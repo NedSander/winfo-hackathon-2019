@@ -1,13 +1,23 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Header } from "./Header";
+import { HashRouter } from 'react-router-dom';
+
+
 
 class App extends Component {
     render() {
         return (
-            <div>
-                <h1>This is the title</h1>
+
+            <div id="app">
+                <HashRouter>
+                    {/* firebase here */}
+                    {/* <Navigation user={this.state.user}></Navigation> */}
+                    <Header />
+
+                </HashRouter>
             </div>
+
         );
     }
 }
