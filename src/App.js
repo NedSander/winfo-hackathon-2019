@@ -11,9 +11,11 @@ class App extends Component {
 
             <div id="app">
                 <HashRouter>
-                    {/* firebase here */}
-                    {/* <Navigation user={this.state.user}></Navigation> */}
-                    <Header />
+                    <React.Fragment>
+                        {/* firebase here */}
+                        <Header />
+                    </React.Fragment>
+
 
                 </HashRouter>
             </div>

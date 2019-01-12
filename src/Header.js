@@ -19,7 +19,7 @@ export class Header extends Component {
         this.toggle = this.toggle.bind(this);
         this.state = {
             isOpen: false,
-        };
+        }; 
     }
 
     toggle() {
@@ -30,33 +30,22 @@ export class Header extends Component {
 
     render() {
         return (
-            <Navbar color="light" light expand="md" className="navbar navbar-expand-sm navbar-dark fixed-top">
-                <NavbarBrand tag={Link} to="/">
-                    JobAppTrackr
-                </NavbarBrand>
+
+            <Navbar color="light" light expand="md">
+
+                <NavbarBrand tag={Link} to="/">JobApplicationTrackr</NavbarBrand>
+
                 <NavbarToggler onClick={this.toggle} />
                 <Collapse isOpen={this.state.isOpen} navbar>
                     <Nav className="ml-auto" navbar>
-                        <NavItem>
-                            <NavLink tag={HashLink} to="/home" onClick={() => {
-                                if (window.innerWidth <= 760) {
-                                    this.setState({ isOpen: !this.state.isOpen })
-                                }
-                            }}>Home</NavLink>
-                        </NavItem>
 
                         <NavItem>
-                            <NavLink tag={HashLink} to="/login" onClick={() => {
-                                if (window.innerWidth <= 760) {
-                                    this.setState({ isOpen: !this.state.isOpen })
-                                }
-                            }}>Login</NavLink>
+                            <NavLink tag={HashLink} to="/login">Login</NavLink>
                         </NavItem>
 
                     </Nav>
                 </Collapse>
             </Navbar>
-
         )
     }
 }
