@@ -5,6 +5,7 @@ import App from './App';
 import firebase from 'firebase/app';
 import * as serviceWorker from './serviceWorker';
 
+<<<<<<< HEAD
 // Initialize Firebase
 var config = {
     apiKey: "AIzaSyBfti6ehTrhH6h_TKn3Y6IyvEixCL-CB84",
@@ -15,10 +16,10 @@ var config = {
     messagingSenderId: "518869610756"
 };
 firebase.initializeApp(config);
+=======
+import 'bootstrap/dist/css/bootstrap.min.css';
+>>>>>>> origin/josh-dev
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
 serviceWorker.unregister();
