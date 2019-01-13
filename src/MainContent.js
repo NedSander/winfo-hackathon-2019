@@ -4,32 +4,38 @@ import {
     Card, Button, CardImg, CardTitle, CardText, CardGroup, CardSubtitle, CardBody
 } from 'reactstrap';
 
-import { Link } from "react-router-dom";
+import { ApplicationInput } from "./AddApplication";
+import { Switch, Route, Redirect, Link } from "react-router-dom";
+
 import { HashLink } from 'react-router-hash-link';
 
 export class Content extends Component {
 
-    constructor(props) {
-        super(props);
-        this.toggle = this.toggle.bind(this);
-        this.state = {
-            isOpen: false,
-        };
-    }
+    render() {
+        return (
 
-    toggle() {
-        this.setState({
-            isOpen: !this.state.isOpen
-        });
+
+            <Switch>
+
+                <Route exact path="/" component={CardView} /> 
+                <Route path="/addApplication" component={ApplicationInput} />
+                <Redirect to="/" />
+            </Switch>
+
+
+
+        )
     }
+}
+
+
+export class CardView extends Component {
 
     render() {
         return (
+
             <React.Fragment>
-
-                <h1 style={{ paddingLeft: '30px', paddingTop: '20px'}}>Applications At A Glance</h1>
-
-               
+                <h1 style={{ paddingLeft: '30px', paddingTop: '20px' }}>Applications At A Glance</h1>
 
                 <CardGroup>
                     <Card style={{ padding: '30px', margin: '50px' }}>
@@ -61,13 +67,11 @@ export class Content extends Component {
                     </Card>
                 </CardGroup>
 
-                <Button  style={{ margin: '30px'}} color="primary">Add New Application</Button>{' '}
-
+                <Button style={{ margin: '30px' }} color="primary" tag={Link} to="/addApplication" > Add New Application </Button>
+                
             </React.Fragment>
-
-
-
         )
     }
+
 }
 
