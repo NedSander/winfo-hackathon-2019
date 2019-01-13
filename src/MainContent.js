@@ -35,7 +35,7 @@ export class Content extends Component {
                
 
                 <CardGroup>
-                    <Card style={{ padding: '30px', margin: '50px', border: 'none' }}>
+                    <Card style={{ padding: '30px', margin: '50px', border: 'none', alignItems: 'center' }}>
                         <CardImg top src={hamburger} alt="Card image cap" />
                         <CardBody>
                             <Button outline color="primary" style={{ fontWeight: 'bold', fontSize: '200%', color: '#0392cf', fontFamily: 'Exo' }}>Active</Button>
@@ -47,7 +47,7 @@ export class Content extends Component {
                             
                         </CardBody>
                     </Card>
-                    <Card style={{ padding: '30px', margin: '50px', border: 'none' }}>
+                    <Card style={{ padding: '30px', margin: '50px', border: 'none', alignItems: 'center' }}>
                         <CardImg top src={dots} alt="Card image cap" />
                         <CardBody>
                             <Button outline color="danger" style={{ fontWeight: 'bold', fontSize: '200%', color: '#ee4035', fontFamily: 'Exo' }}>In Progress</Button>
@@ -56,7 +56,7 @@ export class Content extends Component {
                             <Button>Button</Button> */}
                         </CardBody>
                     </Card>
-                    <Card style={{ padding: '30px', margin: '50px', border: 'none' }}>
+                    <Card style={{ padding: '30px', margin: '50px', border: 'none', alignItems: 'center' }}>
                         <CardImg top src={thumbsUp} alt="Card image cap" />
                         <CardBody>
                             <Button outline color="success" style={{ fontWeight: 'bold', fontSize: '200%', color: '#7bc043', textAlign: 'center', fontFamily: 'Exo' }}>Final Round</Button>
