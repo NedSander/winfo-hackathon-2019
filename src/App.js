@@ -3,6 +3,7 @@ import './App.css';
 import { Header } from "./Header";
 import firebase from 'firebase/app';
 import 'firebase/auth';
+import { Content } from "./MainContent";
 import { HashRouter } from 'react-router-dom';
 
 
@@ -32,6 +33,9 @@ class App extends Component {
                     <React.Fragment>
                         {/* firebase here */}
                         <Header />
+                        <Content />
+                        
+
                     </React.Fragment>
 
                 </HashRouter>
