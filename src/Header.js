@@ -33,14 +33,14 @@ export class Header extends Component {
 
             <Navbar color="light" light expand="md">
 
-                <NavbarBrand tag={Link} to="/">JobApplicationTrackr</NavbarBrand>
+                <NavbarBrand tag={Link} to="/" style={{ fontFamily: 'Titillium Web' }} >JOBTREK</NavbarBrand>
 
                 <NavbarToggler onClick={this.toggle} />
                 <Collapse isOpen={this.state.isOpen} navbar>
                     <Nav className="ml-auto" navbar>
 
                         <NavItem>
-                            <NavLink tag={HashLink} to="/login">Login</NavLink>
+                            <NavLink tag={HashLink} to="/login" style={{ fontFamily: 'Titillium Web' }} >Login</NavLink>
                         </NavItem>
 
                     </Nav>
