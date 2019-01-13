@@ -11,7 +11,7 @@ class App extends Component {
         return (
 
             <div id="app">
-                <HashRouter>
+                <HashRouter >
                     <React.Fragment>
                         {/* firebase here */}
                         <Header />
