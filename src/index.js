@@ -5,7 +5,9 @@ import App from './App';
 import firebase from 'firebase/app';
 import * as serviceWorker from './serviceWorker';
 
-<<<<<<< HEAD
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 // Initialize Firebase
 var config = {
     apiKey: "AIzaSyBfti6ehTrhH6h_TKn3Y6IyvEixCL-CB84",
@@ -15,10 +17,9 @@ var config = {
     storageBucket: "jobsearch-winfohackathon.appspot.com",
     messagingSenderId: "518869610756"
 };
+
+
 firebase.initializeApp(config);
-=======
-import 'bootstrap/dist/css/bootstrap.min.css';
->>>>>>> origin/josh-dev
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
