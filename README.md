@@ -7,6 +7,8 @@ Our group came up with the idea when contemplating the annoyances in our everyda
 
 ![alt-text](https://i.imgur.com/OANluSt.jpg)
 
-Prototype:
+###Prototype:
 https://www.figma.com/proto/FbYDwU43G3xQywZ48sV124NE/Winfo-Hackathon?node-id=6%3A450&scaling=min-zoom
 
+###Credits:
+Josh Keating, Rhea Xinyu Chen, Ned Sander, Israel Martinez, Jerry Lin
