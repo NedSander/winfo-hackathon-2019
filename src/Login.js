@@ -4,7 +4,7 @@ import { Redirect } from 'react-router-dom';
 import firebase from 'firebase/app';
 import 'firebase/auth';
 
-export class LoginForm extends Component {
+export class Login extends Component {
     constructor(props) {
         super(props);
         this.state = {
