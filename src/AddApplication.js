@@ -1,18 +1,15 @@
 import React, { Component } from 'react';
 
-
+import { Link } from "react-router-dom";
 import {
     InputGroup,
-    InputGroupAddon,
     InputGroupButtonDropdown,
-    InputGroupDropdown,
     Input,
     Button,
-    Dropdown,
     DropdownToggle,
     DropdownMenu,
     DropdownItem
-   } from 'reactstrap';
+} from 'reactstrap';
 
 export class ApplicationInput extends Component {
 
@@ -47,7 +44,6 @@ export class ApplicationInput extends Component {
                     <Input placeholder="Position Title" />
                 </InputGroup>
 
-
                 <br />
 
                 <InputGroup>
@@ -55,18 +51,23 @@ export class ApplicationInput extends Component {
                     <InputGroupButtonDropdown isOpen={this.state.dropdownOpen} toggle={this.toggleDropDown}>
                         <DropdownToggle caret>
                             Button Dropdown
-            </DropdownToggle>
+                        </DropdownToggle>
+
                         <DropdownMenu>
-                            <DropdownItem header>Header</DropdownItem>
-                            <DropdownItem disabled>Action</DropdownItem>
-                            <DropdownItem>Another Action</DropdownItem>
-                            <DropdownItem divider />
-                            <DropdownItem>Another Action</DropdownItem>
+                            <DropdownItem>Need To Apply</DropdownItem>
+                            <DropdownItem>Applied</DropdownItem>
+                            <DropdownItem>Phone Screen</DropdownItem>
+                            <DropdownItem>Onsite</DropdownItem>
+                            <DropdownItem>Offer</DropdownItem>
                         </DropdownMenu>
+
                     </InputGroupButtonDropdown>
 
 
                 </InputGroup>
+
+                <Button style={{ margin: '30px' }} color="primary" tag={Link} to="/" > Submit </Button>
+
             </React.Fragment>
 
 

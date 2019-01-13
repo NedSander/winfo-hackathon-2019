@@ -14,15 +14,12 @@ export class Content extends Component {
     render() {
         return (
 
-
             <Switch>
 
                 <Route exact path="/" component={CardView} /> 
                 <Route path="/addApplication" component={ApplicationInput} />
                 <Redirect to="/" />
             </Switch>
-
-
 
         )
     }
